@@ -77,6 +77,7 @@ class Zeros:
             return sp.fsolve(self.f,vi)
         elif self.metodo=="brentq-sp":
             return sp.brentq(self.f,vi[0],vi[1])
-def pol(x):
-    return x*x-2
-x=Zeros(pol,"newton-sp"); print(x.zero(2))
+    def pol(x):
+        return x*x-2
+    if __name__==__"main"__       
+        x=Zeros(pol,"newton-sp"); print(x.zero(2))
